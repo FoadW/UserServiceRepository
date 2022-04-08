@@ -8,6 +8,6 @@ import hcl.microservice.user.model.UserEntity;
 @Repository
 public interface UserRepository extends ReactiveCrudRepository <UserEntity, Long> {
 
-	
+	UserEntity findByEmail1(String email1);
 
 }
